@@ -1,0 +1,32 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #a5a5a5;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  .logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 8px;
+    text-align: center;
+  }

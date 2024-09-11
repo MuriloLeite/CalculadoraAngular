@@ -1,0 +1,29 @@
+<div class="calculator">
+    <app-display [value]="displayValue"></app-display>
+    <div class="buttons">
+      <app-button label="C" (clickEvent)="handleClear()" class="button-special"></app-button>
+      <app-button label="⌫" (clickEvent)="handleBackspace()" class="button-special"></app-button>
+      <app-button label="/" (clickEvent)="handleButtonClick($event)" class="button-op"></app-button>
+      <app-button label="*" (clickEvent)="handleButtonClick($event)" class="button-op"></app-button>
+  
+      <app-button label="7" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="8" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="9" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="-" (clickEvent)="handleButtonClick($event)" class="button-op"></app-button>
+  
+      <app-button label="4" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="5" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="6" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="+" (clickEvent)="handleButtonClick($event)" class="button-plus"></app-button>
+  
+      <app-button label="1" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="2" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="3" (clickEvent)="handleButtonClick($event)"></app-button>
+      <app-button label="=" (clickEvent)="handleButtonClick($event)" class="button-equal"></app-button>
+  
+      <app-button label="0" (clickEvent)="handleButtonClick($event)" class="button-zero"></app-button>
+      <app-button label="." (clickEvent)="handleButtonClick($event)"></app-button>
+    </div>
+    <div class="logo">MURILO</div>
+  </div>
+  
